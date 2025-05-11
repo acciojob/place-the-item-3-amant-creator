@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Flexbox CSS Styling Example</title>
+  <style>
+    .holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      border: 2px solid black;
+      padding: 10px;
+    }
 
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+  </style>
+</head>
 <body>
-<div class="holder">
+
+  <div class="holder">
     <div class="item">Item 1</div>
     <div class="item">Item 2</div>
     <div class="item">Item 3</div>
-</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
 
 </body>
-
 </html>
